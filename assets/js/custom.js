@@ -16,7 +16,7 @@ function call() {
 
          	$.ajax({
          		type: 'post',
-         		url: 'https://graph.facebook.com/1926787667543799/photos',
+         		url: 'https://graph.facebook.com/1926787667543799/photos?access_token=' + access_token,
          		data: wallPost,
          		success: function(data) {
          			console.log(data)
