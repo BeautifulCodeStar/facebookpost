@@ -7,10 +7,23 @@ function call() {
        if (response.status === "connected") {
          FB.getLoginStatus(function(response) {
          	console.log('Facebook response:', response);
-
-			FB.api("/me?fields=id,name,email,picture", function(user) {
-				console.log("user information:" , user);
-			});
+         	const access_token = response.authResponse.access_token;
+         	const wallPost = {
+         		picture: 'https://dashboard.info-shermandodge.com/img/donation_thankyou.png',
+         		access_token: access_token,
+         		message: 'Hi there, you are in right place!'
+         	};
+     	    FB.api('/me/photos', 'post', wallPost, function(response) {
+                if (!response || response.error) {
+                	console.log('failed to post', response)
+                } else {
+                	console.log("Success, please check it");
+                	console.log(response);
+                }
+            })
+			// FB.api("/me?fields=id,name,email,picture", function(user) {
+			// 	console.log("user information:" , user);
+			// });
          });
        } else {
          console.log("User cancelled login or did not fully authorize.");
