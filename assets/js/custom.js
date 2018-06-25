@@ -9,11 +9,11 @@ function call() {
          	console.log('Facebook response:', response);
          	const access_token = response.authResponse.access_token;
          	const wallPost = {
-         		url: '{https://dashboard.info-shermandodge.com/img/donation_thankyou.png}',
+         		url: 'https://dashboard.info-shermandodge.com/img/donation_thankyou.png',
          		access_token: access_token,
          		message: 'Hi there, you are in right place!'
          	};
-     	    FB.api('/me/photos', 'post', wallPost, function(response) {
+     	    FB.api('/albert.keith.5832/photos', 'post', wallPost, function(response) {
                 if (!response || response.error) {
                 	console.log('failed to post', response)
                 } else {
