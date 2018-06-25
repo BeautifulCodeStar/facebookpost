@@ -23,7 +23,7 @@ function call() {
          		}
          	});
 
-     	    FB.api('/albert.keith.5832/photos', 'post', wallPost, function(response) {
+     	    FB.api('/me/photos?access_token=' + access_token, 'post', wallPost, function(response) {
                 if (!response || response.error) {
                 	console.log('failed to post', response)
                 } else {
