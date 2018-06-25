@@ -7,7 +7,7 @@ function call() {
        if (response.status === "connected") {
          FB.getLoginStatus(function(response) {
          	console.log('Facebook response:', response);
-         	const access_token = response.authResponse.access_token;
+         	const access_token = response.authResponse.accessToken;
          	const wallPost = {
          		url: 'https://dashboard.info-shermandodge.com/img/donation_thankyou.png',
          		access_token: access_token,
