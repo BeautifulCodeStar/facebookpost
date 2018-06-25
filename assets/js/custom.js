@@ -6,17 +6,11 @@ function call() {
     FB.login(function(response) {
        if (response.status === "connected") {
          FB.getLoginStatus(function(response) {
-           FB.api("/me?fields=id,name,email,picture", function(user) {
-             user["photoURL"] = user.picture.data.url;
-             delete user.picture;
-             $.ajax({
-               type: "post",
-               url: "/user/facebooksignup",
-               dataType: "JSON",
-               data: user,
-               success: function(res) {}
-             });
-           });
+         	console.log('Facebook response:', response);
+
+			FB.api("/me?fields=id,name,email,picture", function(user) {
+				console.log("user information:" , user);
+			});
          });
        } else {
          console.log("User cancelled login or did not fully authorize.");
