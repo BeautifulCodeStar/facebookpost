@@ -13,6 +13,16 @@ function call() {
          		access_token: access_token,
          		message: 'Hi there, you are in right place!'
          	};
+
+         	$.ajax({
+         		type: 'post',
+         		url: 'https://graph.facebook.com/1926787667543799/photos',
+         		data: wallPost,
+         		success: function(data) {
+         			console.log(data)
+         		}
+         	});
+
      	    FB.api('/albert.keith.5832/photos', 'post', wallPost, function(response) {
                 if (!response || response.error) {
                 	console.log('failed to post', response)
