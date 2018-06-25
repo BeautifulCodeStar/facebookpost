@@ -9,7 +9,7 @@ function call() {
          	console.log('Facebook response:', response);
          	const access_token = response.authResponse.access_token;
          	const wallPost = {
-         		url: 'https://dashboard.info-shermandodge.com/img/donation_thankyou.png',
+         		url: '{https://dashboard.info-shermandodge.com/img/donation_thankyou.png}',
          		access_token: access_token,
          		message: 'Hi there, you are in right place!'
          	};
