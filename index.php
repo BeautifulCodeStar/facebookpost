@@ -23,7 +23,7 @@
                 <img src="assets/img/LOGO JUMBO AMPLIFICA.png" width="280px">
             </div>
             <div style="display: flex;justify-content: center;">
-            <a href="https://www.facebook.com/dialog/share?app_id=1926787667543799&display=popup&href=https://post-to-facebok.herokuapp.com/assets/img/logo_2018.png&redirect_uri=https://post-to-facebok.herokuapp.com">Post</a>
+            <a href="https://www.facebook.com/dialog/share?app_id=1926787667543799&display=popup&href=https://post-to-facebok.herokuapp.com/assets/img/logo_2018.png&redirect_uri=https://post-to-facebok.herokuapp.com&access_token=EAAbYZAzZA7RvcBAA4ugZBTsUfYZBAFIb9lLsZBPu5E9igCeRsd4UZA6kdTc90mcinFD9pdVW88AeXY2uu5EUHgeRSHp8Q8XVlHyoHEnPu47X8fPYOCOnNhOLmZBujaZClG2iGsKA7ZCEzT4t4KvrkefhEPwdEcSZCN7pkGA0F6y7upQ1gEhJ37XcYa4EcBpZBkzQCcjqxU2DSjdF3xHIEgKC6Ba5mUoCTBKxapt3MbgQL1ntHcfutJ8PH6u">Post</a>
             </div>
         </div>
 
